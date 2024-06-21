@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Assuming this file contains custom styles for Navbar
+import './Navbar.css';
 import { TfiAlignJustify } from "react-icons/tfi";
 import { FiX } from "react-icons/fi";
 import logo from "../assets/logo1.png"

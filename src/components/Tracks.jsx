@@ -20,11 +20,11 @@ function FeaturesBlocks() {
 						<h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
 							TRACKS
 						</h1>
-						<p className="py-8 flex flex-wrap justify-center">
+						<div className="py-8 flex flex-wrap justify-center">
 							{tracksData.map((track, index) => {
 								return <TrackCard key={index} track={track} index={index} />;
 							})}
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>

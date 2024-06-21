@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="flex justify-between gap-6 container max-w-[1600px] mx-auto items-center
      py-8 md:py-10 flex-col md:flex-row px-7 md:px-0">
         <div className="block md:hidden md:w-[50%]">
-          <img src={require('../assets/file.png')} style={{ width: '600px', height: '400px' }} />
+          <img src={require('../assets/file.png')} style={{ width: '600px', height: '400px' }} alt='img' />
         </div>
 
         <div className="md:w-[50%]">
@@ -43,8 +43,8 @@ const Hero = () => {
           </Link>
 
         </div>
-        <div class="md:w-[50%] md:block hidden">
-          <img src={require('../assets/file.png')} style={{ width: '600px', height: '500px' }} />
+        <div className="md:w-[50%] md:block hidden">
+          <img src={require('../assets/file.png')} style={{ width: '600px', height: '500px' }} alt='logo' />
         </div>
 
       </div>
