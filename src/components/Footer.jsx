@@ -9,8 +9,8 @@ const Footer = () => {
             <img src={logoDev} alt='logo' className="h-16" />
             <p className="text-lg font-bold text-white">Designed with ❤️ by team DevX JMI</p>
             <div className="flex flex-row gap-4">
-                <a href='#' className="text-purple-600"><FaInstagram className="w-12 h-12" /></a>
-                <a href='#' className="text-purple-600"><FaLinkedin className="w-12 h-12" /></a>
+                <span className="text-purple-600"><FaInstagram className="w-12 h-12" /></span>
+                <span className="text-purple-600"><FaLinkedin className="w-12 h-12" /></span>
             </div>
         </div>
     )
