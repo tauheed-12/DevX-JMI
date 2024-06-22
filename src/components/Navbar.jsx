@@ -5,7 +5,7 @@ import { TfiAlignJustify } from "react-icons/tfi";
 import { FiX } from "react-icons/fi";
 import logo from "../assets/logo1.png"
 import gdsclogo from "../assets/gdsclogo1.png";
-import soarxlogo from "../assets/soarxlogo.png";
+import soarxlogo from "../assets/soarlogo.png";
 
 const Navbar = () => {
     const [menuBar, setMenuBar] = useState(false);
@@ -13,11 +13,11 @@ const Navbar = () => {
     return (
         <>
             <div id="Navbar" className="text-white">
-                {!menuBar && <TfiAlignJustify style={{ color: 'white' }} onClick={() => setMenuBar(true)} className="sm:hidden md:hidden" />}
+                {!menuBar && <TfiAlignJustify style={{ color: 'white' }} onClick={() => setMenuBar(true)} className="sm:hidden md:hidden h-8 w-8" />}
                 <div className="Navbar_logo">
                     <img src={logo} className="w-32 h-16 " alt='logo' />
-                    <img src={soarxlogo} alt='soar' className="w-32 h-16" />
-                    <img src={gdsclogo} alt='gdsclogo' className="w-30 sm:w-32 h-14 sm:h-16" />
+                    <img src={soarxlogo} alt='soar' className="w-32 h-18" />
+                    <img src={gdsclogo} alt='gdsclogo' className="w-30 sm:w-32 h-14 sm:h-12" />
                 </div>
                 <div className="Navbar_navlinks">
                     <Link id="link" to='/' style={{ textDecoration: 'none' }}>Home</Link>

@@ -24,7 +24,7 @@ export const Tech_Team = [
         society: 'SoarX JMI',
     },
     {
-        img: require('../assets/org2.jpg'),
+        img: require('../assets/org8.jpg'),
         name: 'Filza Siddiqui',
         role: 'Web developer',
         society: 'GDSC JMI'
