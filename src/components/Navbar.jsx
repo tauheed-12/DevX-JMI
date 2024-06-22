@@ -13,11 +13,13 @@ const Navbar = () => {
     return (
         <>
             <div id="Navbar" className="text-white">
-                {!menuBar && <TfiAlignJustify style={{ color: 'white' }} onClick={() => setMenuBar(true)} className="sm:hidden md:hidden" />}
+                {!menuBar && <TfiAlignJustify style={{ color: 'white' }} onClick={() => setMenuBar(true)} className="sm:hidden md:hidden w-8 h-8" />}
                 <div className="Navbar_logo">
                     <img src={logo} className="w-28 h-12 " alt='logo' />
-                    <img src={soarxlogo} alt='soar' className="w-28 h-14" />
-                    <img src={gdsclogo} alt='gdsclogo' className="w-28 sm:w-32 h-12 sm:h-12" />
+                    <div className="flex flex-row">
+                        <img src={soarxlogo} alt='soar' className="w-32 h-16" />
+                        <img src={gdsclogo} alt='gdsclogo' className="w-28 sm:w-32 h-12 sm:h-12" />
+                    </div>
                 </div>
                 <div className="Navbar_navlinks">
                     <Link id="link" to='/' style={{ textDecoration: 'none' }}>Home</Link>

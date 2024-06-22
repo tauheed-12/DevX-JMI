@@ -91,6 +91,7 @@
 
     .Navbar_logo {
         justify-content: center;
+        flex-direction: column;
         margin-bottom: 0rem;
         margin-top: 1rem;
     }
