@@ -23,7 +23,7 @@ const Hero = () => {
         <div className="md:w-[50%]">
           <div className="w-[95%] xl:w-[70%] mx-auto">
             <h1
-              className="top-0 h-auto py-4 justify-center flex bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-5xl font-extrabold text-transparent text-center select-auto">
+              className="top-0 h-auto py-4 justify-center flex bg-gradient-to-r items-center from-purple-500 to-pink-500 bg-clip-text text-5xl font-extrabold text-transparent text-center select-auto">
               Welcome to DevX JMI
             </h1>
             <p className="text-white font-serif text-[16px] sm:text-[20px] font-bold mt-[63px] text-center sm:mx-2">
@@ -35,10 +35,10 @@ const Hero = () => {
               <br />Sign up now and be part of the future!
             </p>
           </div>
-          <Link to='/register' className=''>
+          <Link to='https://unstop.com/p/devx-jmi-jamia-millia-islamia-1055794' className=''>
             <span className='bg-[#a50045] mx-auto mt-10 rounded-3xl w-[250px] h-[55px] flex flex-row justify-center gap-3  hover:bg-[#d80060]'>
               <FaCircle className='text-white mt-5 ' />
-              <button className='text-[20px] text-white font-bold '>REGISTOR NOW</button>
+              <button className='text-[20px] text-white font-bold '>REGISTER NOW</button>
             </span>
           </Link>
 

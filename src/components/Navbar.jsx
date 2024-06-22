@@ -16,11 +16,11 @@ const Navbar = () => {
                 {!menuBar && <TfiAlignJustify style={{ color: 'white' }} onClick={() => setMenuBar(true)} className="sm:hidden md:hidden" />}
                 <div className="Navbar_logo">
                     <img src={logo} className="w-32 h-16 " alt='logo' />
-                    <img src={soarxlogo} alt='soar' className="w-30 sm:w-32 h-14 sm:h-16" />
+                    <img src={soarxlogo} alt='soar' className="w-32 h-16" />
                     <img src={gdsclogo} alt='gdsclogo' className="w-30 sm:w-32 h-14 sm:h-16" />
                 </div>
                 <div className="Navbar_navlinks">
-                    <a id="link" href='#head' style={{ textDecoration: 'none' }}>Home</a>
+                    <Link id="link" to='/' style={{ textDecoration: 'none' }}>Home</Link>
                     <a href='#about' style={{ textDecoration: 'none' }}>About</a>
                     <a href='#schedule' style={{ textDecoration: 'none' }}>Schedule</a>
                     <a href='#tracks' style={{ textDecoration: 'none' }}>Tracks</a>
@@ -28,13 +28,13 @@ const Navbar = () => {
                     <Link to='/organisers' style={{ textDecoration: 'none' }}>Organisers</Link>
                 </div>
                 {menuBar && (
-                    <div className="Menu_navlinks md:hidden">
-                        <a id="link" href='#head' style={{ textDecoration: 'none' }}>Home</a>
-                        <a href='#about' style={{ textDecoration: 'none' }}>About</a>
-                        <a href='#schedule' style={{ textDecoration: 'none' }}>Schedule</a>
-                        <a href='#tracks' style={{ textDecoration: 'none' }}>Tracks</a>
-                        <a href='#rounds' style={{ textDecoration: 'none' }}>Rounds</a>
-                        <Link to='/organisers' style={{ textDecoration: 'none' }}>Organisers</Link>
+                    <div className="Menu_navlinks md:hidden z-50">
+                        <Link id="link" to='/' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Home</Link>
+                        <a href='#about' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>About</a>
+                        <a href='#schedule' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Schedule</a>
+                        <a href='#tracks' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Tracks</a>
+                        <a href='#rounds' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Rounds</a>
+                        <Link to='/organisers' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Organisers</Link>
                         <FiX className="absolute right-1 top-1 text-lg" onClick={() => setMenuBar(false)} />
                     </div>
                 )}

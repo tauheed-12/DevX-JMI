@@ -11,7 +11,7 @@ const Organisers = () => {
                 </h1>
                 <div className="flex flex-row justify-center items-center gap-8 flex-wrap">
                     {Organiser.map((member, index) => (
-                        <OrganisersCard img={member.img} name={member.name} role={member.role} society={member.society} />
+                        <OrganisersCard img={member.img} name={member.name} role={member.role} society={member.society} id={index} />
                     ))}
                 </div>
             </div>

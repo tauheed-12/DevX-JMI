@@ -10,13 +10,13 @@ import Footer from '../components/Footer';
 const Home = () => {
     return (
         <div className="min-h-screen flex flex-col justify-center items-center">
-            <div id='Home'>
+            <div id='Home' data-aos="fade-in">
                 <Hero />
             </div>
 
             <div className="border-t border-gray-300 w-full max-w-screen-lg my-4"></div>
 
-            <div id='tracks'>
+            <div id='tracks' data-aos="fade-in">
                 <Tracks />
             </div>
 

@@ -13,7 +13,7 @@ const FAQs = () => {
         <div className="w-11/12 max-w-screen-lg mx-auto p-4">
             <h1 className="text-4xl font-bold mb-6 text-white">FAQs</h1>
             {FAQ.map((item, index) => (
-                <div key={index} className="mb-4 border-none bg-purple-950 p-4">
+                <div key={index} className="mb-4 border-none bg-purple-950 p-4" data-aos="fade-in">
                     <div
                         className="flex justify-between items-center cursor-pointer"
                         onClick={() => handleToggle(index)}
@@ -28,9 +28,9 @@ const FAQs = () => {
                     )}
                 </div>
             ))}
-            <div className="mt-6">
+            <div className="mt-6" data-aos="fade-out">
                 <p className="text-lg text-white">Can't find your questions here?</p>
-                <a href="mailto:sheikhtauheed@gmail.com">
+                <a href="mailto:devxjmi@gmail.com">
                     <button type="button" className="bg-[#a50045] mx-auto mt-10 rounded-3xl w-[250px] h-[55px] flex flex-row justify-center gap-3  hover:bg-[#d80060] text-xl items-center text-white">
                         Contact Us
                     </button>

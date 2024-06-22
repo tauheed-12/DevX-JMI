@@ -3,6 +3,11 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Organisers from './pages/Organisers';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 
 function App() {
   return (

@@ -3,7 +3,7 @@ import soarxlogo from "../assets/soarxlogo.png";
 
 const About = () => {
     return (
-        <div className="flex flex-col justify-center items-center px-4 py-4 text-white gap-16 relative">
+        <div className="flex flex-col justify-center items-center px-4 py-4 text-white gap-16 relative" data-aos="fade-up" >
             <div className="w-10/12 relative z-10">
                 <div className="mb-6">
                     <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">SoarX JMI</h1>
