@@ -9,11 +9,6 @@ const Hero = () => {
 
   return (
     <div >
-      <div className="float-content1"></div>
-      <div className="float-content2"></div>
-      <div className="float-content3"></div>
-      <div className="float-content4"></div>
-      <div className="float-content5"></div>
       <div className="flex justify-between gap-6 container max-w-[1600px] mx-auto items-center
      py-8 md:py-10 flex-col md:flex-row px-7 md:px-0">
         <div className="block md:hidden md:w-[50%]">

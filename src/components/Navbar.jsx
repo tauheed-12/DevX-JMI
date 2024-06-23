@@ -5,6 +5,7 @@ import { TfiAlignJustify } from "react-icons/tfi";
 import { FiX } from "react-icons/fi";
 import logo from "../assets/logo1.png"
 import gdsclogo from "../assets/gdsclogo1.png";
+import { HashLink } from 'react-router-hash-link';
 import soarxlogo from "../assets/soarlogo.png";
 
 const Navbar = () => {
@@ -23,19 +24,19 @@ const Navbar = () => {
                 </div>
                 <div className="Navbar_navlinks">
                     <Link id="link" to='/' style={{ textDecoration: 'none' }}>Home</Link>
-                    <a href='#about' style={{ textDecoration: 'none' }}>About</a>
-                    <a href='#schedule' style={{ textDecoration: 'none' }}>Schedule</a>
-                    <a href='#tracks' style={{ textDecoration: 'none' }}>Tracks</a>
-                    <a href='#rounds' style={{ textDecoration: 'none' }}>Rounds</a>
+                    <HashLink smooth to='/#about' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>About</HashLink>
+                    <HashLink smooth to='/#schedule' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Schedule</HashLink>
+                    <HashLink smooth to='/#tracks' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Tracks</HashLink>
+                    <HashLink smooth to='/#rounds' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Rounds</HashLink>
                     <Link to='/organisers' style={{ textDecoration: 'none' }}>Organisers</Link>
                 </div>
                 {menuBar && (
                     <div className="Menu_navlinks md:hidden z-50">
                         <Link id="link" to='/' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Home</Link>
-                        <a href='#about' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>About</a>
-                        <a href='#schedule' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Schedule</a>
-                        <a href='#tracks' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Tracks</a>
-                        <a href='#rounds' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Rounds</a>
+                        <HashLink smooth to='/#about' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>About</HashLink>
+                        <HashLink smooth to='/#schedule' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Schedule</HashLink>
+                        <HashLink smooth to='/#tracks' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Tracks</HashLink>
+                        <HashLink smooth to='/#rounds' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Rounds</HashLink>
                         <Link to='/organisers' style={{ textDecoration: 'none' }} onClick={() => setMenuBar(false)}>Organisers</Link>
                         <FiX className="absolute right-1 top-1 text-lg" onClick={() => setMenuBar(false)} />
                     </div>
