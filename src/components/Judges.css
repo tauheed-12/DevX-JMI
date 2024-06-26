@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Grotesque";
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.eot'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.ttf'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Regular.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Grotesque Black";
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.eot'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.ttf'),
+        url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/BrandonGrotesque-Black.woff');
+    font-weight: bold;
+}
+
+article.card {
+    width: 250px;
+    height: 250px;
+    border-radius: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+article.card .thumb {
+    width: auto;
+    height: 200px;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+article.card .infos {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    padding: 5px 24px;
+    background: #fff;
+    transition: .4s .15s cubic-bezier(.17, .67, .5, 1.03);
+}
+
+article.card .infos .title {
+    position: relative;
+    margin: 10px 0;
+    letter-spacing: 3px;
+    color: #152536;
+    font-family: 'Grotesque Black', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 0px #314d6a;
+}
+
+article.card .infos .txt {
+    font-family: 'Merriweather', sans-serif;
+    line-height: 2;
+    font-size: 1.2 rem;
+    color: rgba(21, 37, 54, .7);
+    opacity: 0;
+    transition: .5s .25s cubic-bezier(.17, .67, .5, 1.03);
+}
+
+article.card:hover .infos {
+    transform: translateY(-200px);
+}
+
+article.card:hover .infos .txt {
+    opacity: 1;
+}
