@@ -10,7 +10,7 @@ const Judges = () => {
                     return (
                         <article class="card" key={id}>
                             <div class="thumb">
-                                <img src={judge.imag} />
+                                <img src={judge.imag} alt="Meaningful description" />
                             </div>
                             <div class="infos">
                                 <h2 class="title">{judge.name}</h2>
