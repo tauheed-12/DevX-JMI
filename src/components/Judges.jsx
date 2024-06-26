@@ -8,13 +8,13 @@ const Judges = () => {
             <div className="flex flex-row flex-wrap justify-center items-center gap-8">
                 {judgeData.map((judge, id) => {
                     return (
-                        <article class="card" key={id}>
-                            <div class="thumb">
+                        <article className="card" key={id}>
+                            <div className="thumb">
                                 <img src={judge.imag} alt="Meaningful description" />
                             </div>
-                            <div class="infos">
-                                <h2 class="title">{judge.name}</h2>
-                                <p class="txt">
+                            <div className="infos">
+                                <h2 className="title">{judge.name}</h2>
+                                <p className="txt">
                                     {judge.qualifications}
                                 </p>
                             </div>
