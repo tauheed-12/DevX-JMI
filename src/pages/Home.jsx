@@ -7,6 +7,7 @@ import FAQs from '../components/FAQs';
 import Schedule from '../components/Schedule';
 import Footer from '../components/Footer';
 import Judges from '../components/Judges';
+import Sponsors from '../components/Sponsors';
 
 const Home = () => {
     return (
@@ -36,6 +37,10 @@ const Home = () => {
             <div className="border-t border-gray-300 w-full max-w-screen-lg my-4"></div>
 
             <Judges />
+
+            <div className="border-t border-gray-300 w-full max-w-screen-lg my-4"></div>
+
+            <Sponsors />
 
             <div className="border-t border-gray-300 w-full max-w-screen-lg my-4"></div>
 

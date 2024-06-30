@@ -20,6 +20,7 @@ article.card {
     border-radius: 3px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
     overflow: hidden;
+    transition: width 0.3s ease, height 0.3s ease;
 }
 
 article.card .thumb {
@@ -27,15 +28,18 @@ article.card .thumb {
     height: 200px;
     background-size: cover;
     border-radius: 3px;
+    transition: height 0.3s ease;
 }
 
 article.card .infos {
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
     position: relative;
     padding: 5px 24px;
     background: #fff;
     transition: .4s .15s cubic-bezier(.17, .67, .5, 1.03);
+    background-color: rgb(225, 58, 86);
+    color: white;
 }
 
 article.card .infos .title {
@@ -47,15 +51,18 @@ article.card .infos .title {
     font-size: 1.5rem;
     text-transform: uppercase;
     text-shadow: 0 0 0px #314d6a;
+    color: rgb(244, 240, 241);
+    transition: font-size 0.3s ease;
 }
 
 article.card .infos .txt {
     font-family: 'Merriweather', sans-serif;
     line-height: 2;
-    font-size: 1.2 rem;
+    font-size: 1.2rem;
     color: rgba(21, 37, 54, .7);
     opacity: 0;
-    transition: .5s .25s cubic-bezier(.17, .67, .5, 1.03);
+    transition: .5s .25s cubic-bezier(.17, .67, .5, 1.03), font-size 0.3s ease;
+    color: rgb(244, 240, 241);
 }
 
 article.card:hover .infos {
@@ -64,4 +71,85 @@ article.card:hover .infos {
 
 article.card:hover .infos .txt {
     opacity: 1;
+}
+
+@media screen and (max-width: 729px) {
+    article.card {
+        width: 200px;
+        height: 200px;
+    }
+
+    article.card .thumb {
+        height: 150px;
+    }
+
+    article.card .infos {
+        padding: 5px 16px;
+    }
+
+    article.card .infos .title {
+        font-size: 1rem;
+    }
+
+    article.card .infos .txt {
+        font-size: 0.85rem;
+    }
+
+    article.card:hover .infos {
+        transform: translateY(-150px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    article.card {
+        width: 150px;
+        height: 150px;
+    }
+
+    article.card .thumb {
+        height: 100px;
+    }
+
+    article.card .infos {
+        padding: 5px 12px;
+    }
+
+    article.card .infos .title {
+        font-size: 0.65rem;
+    }
+
+    article.card .infos .txt {
+        font-size: 0.75rem;
+    }
+
+    article.card:hover .infos {
+        transform: translateY(-100px);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    article.card {
+        width: 120px;
+        height: 120px;
+    }
+
+    article.card .thumb {
+        height: 80px;
+    }
+
+    article.card .infos {
+        padding: 5px 8px;
+    }
+
+    article.card .infos .title {
+        font-size: 0.75rem;
+    }
+
+    article.card .infos .txt {
+        font-size: 0.65rem;
+    }
+
+    article.card:hover .infos {
+        transform: translateY(-80px);
+    }
 }
