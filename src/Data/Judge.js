@@ -11,5 +11,9 @@ export const judgeData = [
         name: 'Dr. Bhaskar Gupta',
         qualifications: 'Research Scientist, Director at NITRA Technical Campus',
         imag: require('../assets/gupta.jpg')
+    }, {
+        name: 'Deepak Kumar',
+        qualifications: ' Software Development Engineer (SDE) currently at Amazon',
+        imag: require('../assets/deepesh.jpg')
     }
 ]

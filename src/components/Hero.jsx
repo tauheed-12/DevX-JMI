@@ -23,7 +23,7 @@ const Hero = () => {
             </h1>
             <p className="text-white font-serif text-[16px] sm:text-[20px] font-bold mt-[63px] text-center sm:mx-2">
               Unleash Your Creativity and Innovation<br />
-              Join DEVXJMI to innovate and collaborate! In this three-round marathon,
+              Join DEVXJMI to innovate and collaborate! In this three-round hackathon,
               teams will design and build innovative ideas from scratch, create cutting-edge solutions,
               compete for prizes, and network with industry experts. Whether you're a coder, designer,
               or entrepreneur, bring your skills and ideas to build something amazing.
